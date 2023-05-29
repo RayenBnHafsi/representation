@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "img",
+			"path": "../sproduct/img"
+		},
+		{
+			"name": "Animations",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Animations"
+	}
+}

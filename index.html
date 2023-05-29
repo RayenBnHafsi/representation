@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJANGO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/project_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+
+    <header class="header">
+        <a href="" class="logo">DJANGO</a>
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#Home" style="--i:1;" class="active">Intro</a>
+            <a href="#problem" style="--i:1;">MVT</a>
+            <a href="#contact" style="--i:4;">Contact</a>
+            <!-- <a href="team.html" style="--i:4;">Team</a> -->
+            <!-- <a href="" style="--i:5;"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+            <a href="" style="--i:6;"><i class="fa-solid fa-magnifying-glass"></i></a> -->
+        </nav>
+    </header>
+
+<!--  -->
+    <section class="home" id="Home">
+        <div class="home-content">
+            <h3>What </h3>
+            <h1>Are we going to learn</h1>
+            <p><br></p>
+            <h3><span>Django</span>:</h3>
+            <p>
+                Django is a high-level web framework for building Python web applications quickly and
+
+                efficiently. It follows the Model-View-Template (MVT) architectural pattern and includes built-
+                in features for URL routing, templating, database management, and more.
+                
+                Django is designed to be a "batteries included" web framework, which means it comes with a
+                set of built-in applications, or "apps," that provide common web development functionality.
+                These apps are like building blocks that you can use to quickly create web applications.            
+            </p>
+            <div class="social-media">
+                <a href="https://www.python.org/" style="--i:7"><i class="fa-brands fa-python"></i></a>
+                <a href="https://www.djangoproject.com/" style="--i:8"><i class="fa-solid fa-d"></i></a>
+            </div>
+            <a href="https://www.djangoproject.com/start/" class="btn">Read more</a>
+        </div>
+
+        <div class="home-img">
+            <img src="img/cmd.jpg" width="78%" height="78%" alt="">
+        </div>
+    </section>
+
+    <section style="margin-bottom: 20rem; margin-top: 20rem;" class="home">
+        <div class="home-content">
+            <h3>Creating a Django Project</h3>
+            <p></p>
+            <h3>to <span>start </span>:</h3>
+            <p>
+                1 - Install Python and pip (Python package installer) if not already installed. <br>
+                2 - Use pip to install Django: pip install Django. <br>
+                3 - Verify the installation by running django-admin --version. <br>
+            </p><br>
+            <p></p>
+            <h3><span>1 </span>:</h3>
+            <p></p>
+            <p>
+                1 - Use the command django-admin startproject project_name to create a new Django project. <br>
+                2 - Discuss the project structure and the purpose of each file and folder. <br>
+                3 - create a new app using python manage.py startapp app_name. <br>
+            </p>
+            <br>
+            <p></p>
+            <h3><span>2 </span>:</h3>
+            <h3>collect the database : </h3>
+            <p></p>
+            <p>
+                1 - Explain Django's migration system. <br>
+                2 - Show how to create and apply migrations using python manage.py makemigrations and python manage.py migrate. <br>
+                3 - Discuss different databases supported by Django. <br>
+            </p>
+            <br>
+            <p></p>
+            <h3><span>3 </span>:</h3>
+            <h3>collect static : </h3>
+            <p></p>
+            <p>
+                2 - to collect static : python manage.py collectstatic. <br>
+            </p>
+        </div>
+
+        <div class="home-img">
+            <img src="img/startapp.jpg" width="78%" height="78%" alt="">
+        </div>
+    </section>
+
+
+
+    <!-- about section design -->
+          <!-- Slides -->
+    <section class="about" id="problem">
+        <div class="about-img">
+            <img src="img/Mvt.jpg" alt="logo">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">M<span>V</span>T</h2>
+            <p></p>
+            <h3>Welcome to the presentation on building a Django app!</h3>
+            <p>
+                MVT <br> stands for Model-View-Template, which is a software design pattern commonly used in Django, a Python web framework. MVT is Django's variation of the Model-View-Controller (MVC) pattern and provides a structured way to develop web applications.            </p>
+            </p>
+            <p>
+            <p>
+                Model: <br> The Model represents the data structure of your application. It defines the database schema and handles data manipulation, validation, and business logic. In Django, models are typically defined as Python classes that inherit from django.db.models.Model and are stored in a file called models.py.
+
+            </p>
+            <p>
+                View: <br> The View is responsible for handling the logic of your application and processing user requests. It receives requests from the user's browser, interacts with the Model to fetch or update data, and then passes that data to the Template for rendering. In Django, views are implemented as Python functions or class-based views, which are mapped to specific URLs.
+            </p>
+            <p>
+                Template: <br> The Template represents the presentation layer of your application. It defines how the data fetched from the View should be rendered and displayed to the user. Django uses a template engine to render dynamic HTML pages. Templates can contain HTML, along with placeholders and template tags that allow you to insert dynamic data or control the rendering process.
+            </p>
+            <a href="https://www.askpython.com/django/django-mvt-architecture" class="btn">Read more</a>
+        </div>
+    </section>
+
+
+<section class="about" id="solution">
+        <div class="about-content">
+            <h2 class="heading">Django <span>Admin</span> Interface</h2>
+            <p>
+                The Django admin interface is a built-in feature of the Django web framework that provides a user-friendly interface for managing and administering a Django project's data models. It is a powerful tool that allows you to perform common CRUD (Create, Read, Update, Delete) operations on your database records without having to write custom views or templates.
+            </p>
+            <p>
+                1. Login and authentication <br>
+                2. Automatic CRUD operations<br>
+                3. Filtering and searching<br>
+                4. Model relationships<br>
+                5. Customization<br>
+            </p>
+        </div>
+</section>
+<section style="margin-top: -37rem;" class="about" id="solution">
+    <div class="about-content">
+        <h2 class="heading">Testing <span>and </span> Debugging</h2>
+        <p>
+            Testing and debugging are essential aspects of software development to ensure that your Django application works correctly and is free of errors. Django provides several tools and techniques to help you with testing and debugging.
+        </p>
+        <p>
+            1. Test Cases <br>
+            2. Test Client <br>
+            3. Fixtures <br>
+            4. Test Runners <br>
+            5. Debugging in Django <br>
+        <p>
+        </p>
+    </div>
+</section>
+<section style="margin-top: -37rem;" class="about" id="solution">
+    <div class="about-content">
+        <h2 class="heading">Dep<span>loyment</span></h2>
+        <p>
+            Testing and debugging are essential aspects of software development to ensure that your Django application works correctly and is free of errors. Django provides several tools and techniques to help you with testing and debugging.
+        </p>
+        <p>
+            1. Use Docker and Docker Compose <br>
+            2. Use a web server like Nginx <br>
+            3. Consider using S3 buckets <br>
+            4. Host your database <br>
+            5. Use Kubernetes <br>
+        <p>
+        </p>
+    </div>
+</section>
+
+<!--  -->
+<section class="home" id="Home">
+    <div class="home-content">
+        <h3>How  </h3>
+        <h1>much Django should you learn?</h1>
+        <p><br></p>
+        <p>
+            Learning Django can be difficult if you plan to learn everything. In this post I talk about being more pragmatic in your Django learning journey.
+        </p>
+        <p>
+            For beginners this might seem like weird advice. Here's why it works:
+            When you're learning something new, and particularly when you're learning it by yourself, the most difficult part is not learning the actual content, it's figuring out exactly what to learn.
+            If you approached learning with a mindset of "I'm just going to learn everything", you'll find that you spend a lot of time learning things you never actually put into practice. You land up spending way too much time learning things you didn't actually need to know. No one wants to waste time. And as the saying goes, time is money.
+        </p>
+    </div>
+
+    <div class="home-img">
+        <img src="img/analis.jpg" width="78%" height="78%" alt="">
+    </div>
+</section>
+
+
+
+    <!-- section contact -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Us</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="number" placeholder="Email subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="You Message"></textarea>
+            <input type="text" value="Send Message" class="btn">
+        </form>
+    </section>
+
+
+<!-- footer -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyight &copy; 2023 by <span class="multiple-Text">Rayen Hafsi</span> | All Rights Reseved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#Home"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+
+<!-- JS -->
+<!-- js scrole -->
+<!-- endscrle -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
